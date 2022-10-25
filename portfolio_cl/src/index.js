@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import WebFont from 'webfontloader';
+import './scss/main.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+WebFont.load({
+  google: {
+    families: ['Merriweather', 'Open Sans', ]
+  }
+});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
